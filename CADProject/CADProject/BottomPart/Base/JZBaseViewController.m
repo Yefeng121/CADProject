@@ -61,7 +61,7 @@
 	[self.navBarItem.backView setBackgroundColor:[UIColor C_baseGreen]];
 	
 	// Do any additional setup after loading the view.
-	self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Bcolor_11"]];
+	self.view.backgroundColor = [UIColor whiteColor];
 	
 }
 

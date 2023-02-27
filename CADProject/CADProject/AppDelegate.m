@@ -20,7 +20,7 @@
     [UIApplication sharedApplication].delegate.window = self.window;
     self.window.frame = [UIScreen mainScreen].bounds;
     CADGuideViewController *vc = [[CADGuideViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    JZNavigationController *nav = [[JZNavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController=nav;
     [self.window makeKeyAndVisible];
     

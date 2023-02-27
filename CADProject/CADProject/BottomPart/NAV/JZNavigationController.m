@@ -1,18 +1,17 @@
 //
-//  PENavigationController.m
 //  PercetIn
 //
 //  Created by Keven on 2018/7/18.
 //  Copyright © 2018年 Keven. All rights reserved.
 //
 
-#import "PENavigationController.h"
+#import "JZNavigationController.h"
 
-@interface PENavigationController ()<UIGestureRecognizerDelegate>
+@interface JZNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
-@implementation PENavigationController
+@implementation JZNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

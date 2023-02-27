@@ -1,5 +1,4 @@
 //
-//  PENavigationController.h
 //  PercetIn
 //
 //  Created by Keven on 2018/7/18.
@@ -8,6 +7,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PENavigationController : UINavigationController
+@interface JZNavigationController : UINavigationController
 
 @end

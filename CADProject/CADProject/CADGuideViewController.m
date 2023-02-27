@@ -6,7 +6,8 @@
 //
 
 #import "CADGuideViewController.h"
-
+#import "AppDelegate.h"
+#import "JZTabbarViewController.h"
 @interface CADGuideViewController ()
 
 @end
@@ -18,16 +19,13 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor greenColor];
+    
+    AppDelegate *appDelegate=[[AppDelegate alloc]init];
+    JZTabbarViewController *tabbarVC = [[JZTabbarViewController alloc] init];
+    appDelegate.window.rootViewController = tabbarVC;
+    [self.navigationController pushViewController:tabbarVC animated:NO];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

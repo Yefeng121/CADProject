@@ -1,17 +1,17 @@
 //
-//  CADHomeViewController.m
+//  CADBlueprintViewController.m
 //  CADProject
 //
-//  Created by Jacy on 2023/2/24.
+//  Created by Jacy on 2023/2/27.
 //
 
-#import "CADHomeViewController.h"
+#import "CADBlueprintViewController.h"
 
-@interface CADHomeViewController ()
+@interface CADBlueprintViewController ()
 
 @end
 
-@implementation CADHomeViewController
+@implementation CADBlueprintViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

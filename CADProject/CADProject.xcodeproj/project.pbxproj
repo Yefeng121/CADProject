@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0407F50F29AD019100604D20 /* JZTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407F50E29AD019100604D20 /* JZTabbarViewController.m */; };
+		0407F51729AD031500604D20 /* CADMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407F51629AD031500604D20 /* CADMineViewController.m */; };
+		0407F51A29AD033A00604D20 /* CADCloudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407F51929AD033A00604D20 /* CADCloudViewController.m */; };
+		0407F51D29AD03D800604D20 /* CADAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407F51C29AD03D800604D20 /* CADAddViewController.m */; };
+		0407F52029AD040000604D20 /* CADProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407F51F29AD040000604D20 /* CADProjectViewController.m */; };
+		0407F52329AD042400604D20 /* CADBlueprintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407F52229AD042400604D20 /* CADBlueprintViewController.m */; };
 		04BDD86B29A7C40C003A09F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDD86A29A7C40C003A09F8 /* AppDelegate.m */; };
 		04BDD87129A7C40C003A09F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDD87029A7C40C003A09F8 /* ViewController.m */; };
 		04BDD87429A7C40C003A09F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BDD87229A7C40C003A09F8 /* Main.storyboard */; };
 		04BDD87629A7C410003A09F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BDD87529A7C410003A09F8 /* Assets.xcassets */; };
 		04BDD87929A7C410003A09F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BDD87729A7C410003A09F8 /* LaunchScreen.storyboard */; };
 		04BDD87C29A7C410003A09F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDD87B29A7C410003A09F8 /* main.m */; };
-		04BDD88529A7C688003A09F8 /* CADHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDD88429A7C688003A09F8 /* CADHomeViewController.m */; };
 		04BDD88829A7C6E1003A09F8 /* CADGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDD88729A7C6E1003A09F8 /* CADGuideViewController.m */; };
 		0CEABFD729ACA88200E823A9 /* JZBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFD329ACA88200E823A9 /* JZBaseTableViewCell.m */; };
 		0CEABFD829ACA88200E823A9 /* JZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFD429ACA88200E823A9 /* JZBaseViewController.m */; };
@@ -22,7 +27,7 @@
 		0CEABFE629ACA8D400E823A9 /* SYNavigationItemBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFDD29ACA8D400E823A9 /* SYNavigationItemBtnView.m */; };
 		0CEABFE729ACA8D400E823A9 /* SYNavigationitemLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFDE29ACA8D400E823A9 /* SYNavigationitemLeftView.m */; };
 		0CEABFE829ACA8D400E823A9 /* SYNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFDF29ACA8D400E823A9 /* SYNavigationItem.m */; };
-		0CEABFE929ACA8D400E823A9 /* PENavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFE429ACA8D400E823A9 /* PENavigationController.m */; };
+		0CEABFE929ACA8D400E823A9 /* JZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFE429ACA8D400E823A9 /* JZNavigationController.m */; };
 		0CEABFED29ACA98A00E823A9 /* UIView+xframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFEB29ACA98A00E823A9 /* UIView+xframe.m */; };
 		0CEABFF129ACB21200E823A9 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFEF29ACB21100E823A9 /* NSString+Additions.m */; };
 		0CEABFF529ACBADB00E823A9 /* UIView+ExtendHitArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFF329ACBADB00E823A9 /* UIView+ExtendHitArea.m */; };
@@ -31,6 +36,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0407F50D29AD019100604D20 /* JZTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZTabbarViewController.h; sourceTree = "<group>"; };
+		0407F50E29AD019100604D20 /* JZTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZTabbarViewController.m; sourceTree = "<group>"; };
+		0407F51529AD031500604D20 /* CADMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADMineViewController.h; sourceTree = "<group>"; };
+		0407F51629AD031500604D20 /* CADMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADMineViewController.m; sourceTree = "<group>"; };
+		0407F51829AD033A00604D20 /* CADCloudViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADCloudViewController.h; sourceTree = "<group>"; };
+		0407F51929AD033A00604D20 /* CADCloudViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADCloudViewController.m; sourceTree = "<group>"; };
+		0407F51B29AD03D800604D20 /* CADAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADAddViewController.h; sourceTree = "<group>"; };
+		0407F51C29AD03D800604D20 /* CADAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADAddViewController.m; sourceTree = "<group>"; };
+		0407F51E29AD040000604D20 /* CADProjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADProjectViewController.h; sourceTree = "<group>"; };
+		0407F51F29AD040000604D20 /* CADProjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADProjectViewController.m; sourceTree = "<group>"; };
+		0407F52129AD042400604D20 /* CADBlueprintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADBlueprintViewController.h; sourceTree = "<group>"; };
+		0407F52229AD042400604D20 /* CADBlueprintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADBlueprintViewController.m; sourceTree = "<group>"; };
 		04BDD86629A7C40C003A09F8 /* CADProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CADProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BDD86929A7C40C003A09F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04BDD86A29A7C40C003A09F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -41,8 +58,6 @@
 		04BDD87829A7C410003A09F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BDD87A29A7C410003A09F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BDD87B29A7C410003A09F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		04BDD88329A7C688003A09F8 /* CADHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADHomeViewController.h; sourceTree = "<group>"; };
-		04BDD88429A7C688003A09F8 /* CADHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADHomeViewController.m; sourceTree = "<group>"; };
 		04BDD88629A7C6E1003A09F8 /* CADGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADGuideViewController.h; sourceTree = "<group>"; };
 		04BDD88729A7C6E1003A09F8 /* CADGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADGuideViewController.m; sourceTree = "<group>"; };
 		0CEABFD129ACA88200E823A9 /* JZBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZBaseViewController.h; sourceTree = "<group>"; };
@@ -51,7 +66,7 @@
 		0CEABFD429ACA88200E823A9 /* JZBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZBaseViewController.m; sourceTree = "<group>"; };
 		0CEABFD529ACA88200E823A9 /* JZBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZBaseTableViewController.m; sourceTree = "<group>"; };
 		0CEABFD629ACA88200E823A9 /* JZBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZBaseTableViewCell.h; sourceTree = "<group>"; };
-		0CEABFDA29ACA8D400E823A9 /* PENavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PENavigationController.h; sourceTree = "<group>"; };
+		0CEABFDA29ACA8D400E823A9 /* JZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZNavigationController.h; sourceTree = "<group>"; };
 		0CEABFDC29ACA8D400E823A9 /* MSNavigationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNavigationButton.m; sourceTree = "<group>"; };
 		0CEABFDD29ACA8D400E823A9 /* SYNavigationItemBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNavigationItemBtnView.m; sourceTree = "<group>"; };
 		0CEABFDE29ACA8D400E823A9 /* SYNavigationitemLeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNavigationitemLeftView.m; sourceTree = "<group>"; };
@@ -60,7 +75,7 @@
 		0CEABFE129ACA8D400E823A9 /* MSNavigationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNavigationButton.h; sourceTree = "<group>"; };
 		0CEABFE229ACA8D400E823A9 /* SYNavigationitemLeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNavigationitemLeftView.h; sourceTree = "<group>"; };
 		0CEABFE329ACA8D400E823A9 /* SYNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNavigationItem.h; sourceTree = "<group>"; };
-		0CEABFE429ACA8D400E823A9 /* PENavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PENavigationController.m; sourceTree = "<group>"; };
+		0CEABFE429ACA8D400E823A9 /* JZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZNavigationController.m; sourceTree = "<group>"; };
 		0CEABFEB29ACA98A00E823A9 /* UIView+xframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+xframe.m"; sourceTree = "<group>"; };
 		0CEABFEC29ACA98A00E823A9 /* UIView+xframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+xframe.h"; sourceTree = "<group>"; };
 		0CEABFEE29ACAEB200E823A9 /* JZBasicSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZBasicSettings.h; sourceTree = "<group>"; };
@@ -88,6 +103,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0407F50C29AD013100604D20 /* TAB */ = {
+			isa = PBXGroup;
+			children = (
+				0407F50D29AD019100604D20 /* JZTabbarViewController.h */,
+				0407F50E29AD019100604D20 /* JZTabbarViewController.m */,
+			);
+			path = TAB;
+			sourceTree = "<group>";
+		};
+		0407F51029AD01EA00604D20 /* blueprint */ = {
+			isa = PBXGroup;
+			children = (
+				0407F52129AD042400604D20 /* CADBlueprintViewController.h */,
+				0407F52229AD042400604D20 /* CADBlueprintViewController.m */,
+			);
+			path = blueprint;
+			sourceTree = "<group>";
+		};
+		0407F51129AD026C00604D20 /* project */ = {
+			isa = PBXGroup;
+			children = (
+				0407F51E29AD040000604D20 /* CADProjectViewController.h */,
+				0407F51F29AD040000604D20 /* CADProjectViewController.m */,
+			);
+			path = project;
+			sourceTree = "<group>";
+		};
+		0407F51229AD028100604D20 /* add */ = {
+			isa = PBXGroup;
+			children = (
+				0407F51B29AD03D800604D20 /* CADAddViewController.h */,
+				0407F51C29AD03D800604D20 /* CADAddViewController.m */,
+			);
+			path = add;
+			sourceTree = "<group>";
+		};
+		0407F51329AD028700604D20 /* clouddisk */ = {
+			isa = PBXGroup;
+			children = (
+				0407F51829AD033A00604D20 /* CADCloudViewController.h */,
+				0407F51929AD033A00604D20 /* CADCloudViewController.m */,
+			);
+			path = clouddisk;
+			sourceTree = "<group>";
+		};
+		0407F51429AD02F000604D20 /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				0407F51529AD031500604D20 /* CADMineViewController.h */,
+				0407F51629AD031500604D20 /* CADMineViewController.m */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
 		04BDD85D29A7C40C003A09F8 = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +178,12 @@
 		04BDD86829A7C40C003A09F8 /* CADProject */ = {
 			isa = PBXGroup;
 			children = (
+				0407F51029AD01EA00604D20 /* blueprint */,
+				0407F51129AD026C00604D20 /* project */,
+				0407F51229AD028100604D20 /* add */,
+				0407F51329AD028700604D20 /* clouddisk */,
+				0407F51429AD02F000604D20 /* mine */,
 				0CEABFCE29ACA88200E823A9 /* BottomPart */,
-				04BDD88229A7C658003A09F8 /* home */,
 				04BDD86929A7C40C003A09F8 /* AppDelegate.h */,
 				04BDD86A29A7C40C003A09F8 /* AppDelegate.m */,
 				04BDD88629A7C6E1003A09F8 /* CADGuideViewController.h */,
@@ -126,19 +199,11 @@
 			path = CADProject;
 			sourceTree = "<group>";
 		};
-		04BDD88229A7C658003A09F8 /* home */ = {
-			isa = PBXGroup;
-			children = (
-				04BDD88329A7C688003A09F8 /* CADHomeViewController.h */,
-				04BDD88429A7C688003A09F8 /* CADHomeViewController.m */,
-			);
-			path = home;
-			sourceTree = "<group>";
-		};
 		0CEABFCE29ACA88200E823A9 /* BottomPart */ = {
 			isa = PBXGroup;
 			children = (
 				0CEABFF229ACB23500E823A9 /* PrefixHeader.pch */,
+				0407F50C29AD013100604D20 /* TAB */,
 				0CEABFEA29ACA97100E823A9 /* Category */,
 				0CEABFCF29ACA88200E823A9 /* NAV */,
 				0CEABFD029ACA88200E823A9 /* Base */,
@@ -149,8 +214,8 @@
 		0CEABFCF29ACA88200E823A9 /* NAV */ = {
 			isa = PBXGroup;
 			children = (
-				0CEABFDA29ACA8D400E823A9 /* PENavigationController.h */,
-				0CEABFE429ACA8D400E823A9 /* PENavigationController.m */,
+				0CEABFDA29ACA8D400E823A9 /* JZNavigationController.h */,
+				0CEABFE429ACA8D400E823A9 /* JZNavigationController.m */,
 				0CEABFDB29ACA8D400E823A9 /* View */,
 			);
 			path = NAV;
@@ -315,20 +380,25 @@
 			files = (
 				0CEABFE729ACA8D400E823A9 /* SYNavigationitemLeftView.m in Sources */,
 				04BDD87129A7C40C003A09F8 /* ViewController.m in Sources */,
+				0407F50F29AD019100604D20 /* JZTabbarViewController.m in Sources */,
 				04BDD86B29A7C40C003A09F8 /* AppDelegate.m in Sources */,
 				0CEABFD829ACA88200E823A9 /* JZBaseViewController.m in Sources */,
-				0CEABFE929ACA8D400E823A9 /* PENavigationController.m in Sources */,
+				0407F52329AD042400604D20 /* CADBlueprintViewController.m in Sources */,
+				0407F51D29AD03D800604D20 /* CADAddViewController.m in Sources */,
+				0CEABFE929ACA8D400E823A9 /* JZNavigationController.m in Sources */,
 				04BDD88829A7C6E1003A09F8 /* CADGuideViewController.m in Sources */,
 				0CEABFD929ACA88200E823A9 /* JZBaseTableViewController.m in Sources */,
 				0CEABFF829ACBB9900E823A9 /* UIColor+JZColor.m in Sources */,
 				0CEABFED29ACA98A00E823A9 /* UIView+xframe.m in Sources */,
+				0407F51729AD031500604D20 /* CADMineViewController.m in Sources */,
 				0CEABFF129ACB21200E823A9 /* NSString+Additions.m in Sources */,
-				04BDD88529A7C688003A09F8 /* CADHomeViewController.m in Sources */,
 				0CEABFE529ACA8D400E823A9 /* MSNavigationButton.m in Sources */,
 				0CEABFF529ACBADB00E823A9 /* UIView+ExtendHitArea.m in Sources */,
 				0CEABFE829ACA8D400E823A9 /* SYNavigationItem.m in Sources */,
 				0CEABFD729ACA88200E823A9 /* JZBaseTableViewCell.m in Sources */,
+				0407F52029AD040000604D20 /* CADProjectViewController.m in Sources */,
 				0CEABFE629ACA8D400E823A9 /* SYNavigationItemBtnView.m in Sources */,
+				0407F51A29AD033A00604D20 /* CADCloudViewController.m in Sources */,
 				04BDD87C29A7C410003A09F8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
