@@ -26,6 +26,9 @@
     [self.navigationController pushViewController:tabbarVC animated:NO];
 }
 
-
+- (void)viewWillAppear:(BOOL)animated{
+	[super viewWillAppear:animated];
+	
+}
 
 @end
