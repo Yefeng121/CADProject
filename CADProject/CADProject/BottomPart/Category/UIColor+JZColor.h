@@ -11,6 +11,9 @@
 
 @interface UIColor (JZColor)
 
++ (UIColor *)C_8195A5;
++ (UIColor *)C_101D34;
++ (UIColor *)C_F1F5F8;
 	/// RGBA 创建带透明度的颜色
 	/// @param r r description
 	/// @param g g description

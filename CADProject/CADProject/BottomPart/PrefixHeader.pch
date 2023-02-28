@@ -19,6 +19,8 @@
 #import "NSString+Additions.h"
 #import "UIView+ExtendHitArea.h"
 #import "UIColor+JZColor.h"
+#import "UIView+CreateViews.h"
+
 #import "JZNavigationController.h"
 #import "JZBaseViewController.h"
 #import "JZBaseTableViewController.h"

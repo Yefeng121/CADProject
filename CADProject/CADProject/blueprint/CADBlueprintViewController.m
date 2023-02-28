@@ -6,16 +6,25 @@
 //
 
 #import "CADBlueprintViewController.h"
+#import "CADBlueprintView.h"
 
 @interface CADBlueprintViewController ()
-
+@property (nonatomic, strong) CADBlueprintView *BlueprintView;
 @end
 
 @implementation CADBlueprintViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self createMainView];
+}
+- (void)createMainView{
+    PEWeak(self, weakSelf);
+    self.BlueprintView = [[CADBlueprintView alloc] initWithFrame:self.view.bounds block:^(NSInteger index) {
+        NSLog(@" --------- %ld",index);
+    }];
+    [self.view addSubview:self.BlueprintView];
 }
 - (void)viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:animated];

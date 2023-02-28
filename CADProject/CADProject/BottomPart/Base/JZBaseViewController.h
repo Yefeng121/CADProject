@@ -33,6 +33,7 @@
 //神策统计页面title
 @property (nonatomic, strong) NSString *pageName;
 
+- (void)initView;
 
 - (void)BaseControllerClickNavLeftButton:(UIButton *)btn;
 - (void)BaseControllerClickNavRightButton:(UIButton *)btn;

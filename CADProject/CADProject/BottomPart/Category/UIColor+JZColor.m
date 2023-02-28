@@ -14,6 +14,20 @@
 
 	return [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:A];
 }
+
+
++ (UIColor *)C_8195A5{
+
+    return [self hexStringToColor:@"8195A5"];
+}
++ (UIColor *)C_101D34{
+
+    return [self hexStringToColor:@"101D34"];
+}
++ (UIColor *)C_F1F5F8{
+
+    return [self hexStringToColor:@"F1F5F8"];
+}
 + (UIColor *)C_D8D8D8{
 
 	return [self hexStringToColor:@"D8D8D8"];
