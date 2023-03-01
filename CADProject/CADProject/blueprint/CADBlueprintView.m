@@ -56,6 +56,8 @@
         
     }];
     [self addSubview:self.cellView];
+	
+	
 }
 - (void)btnTouched:(UIButton *)btn{
     if(self.BlueprintViewBlock) self.BlueprintViewBlock(btn.tag);
@@ -115,8 +117,12 @@
     if(self.btnViewBlock) self.btnViewBlock(con.tag);
 }
 @end
-@interface CADBlueprintCellView ()
+@interface CADBlueprintCellView ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UIButton *btnSelected;
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *dataArrayNow;
+@property (nonatomic, strong) NSMutableArray *dataArrayYan;
+
 @end
 
 @implementation CADBlueprintCellView
@@ -153,6 +159,37 @@
     [self addSubview:btnYan];
     btnYan.centerY = btnNow.centerY;
     
+	
+}
+/**
+ MARK: 创建tableview
+ */
+-(void)createTableView{
+
+	if (!self.tableView) {
+
+		self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(15, 58, self.width - 30, self.height - 58) style:UITableViewStyleGrouped];
+		[self addSubview:self.tableView];
+	}
+	self.tableView.dataSource=self;
+	self.tableView.delegate=self;
+	self.tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
+	self.tableView.scrollEnabled=YES;
+	self.tableView.contentInsetAdjustmentBehavior = NO;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+	
+	return 1;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+	CADBlueprintFileCell *cell = [CADBlueprintFileCell createTableViewCellWith:tableView withModel:nil];
+	
+	return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+	
 }
 
 - (void)btnTouched:(UIButton *)btn{
@@ -165,4 +202,55 @@
     
     if(self.cellViewBlock) self.cellViewBlock(btn.tag);
 }
+@end
+@interface CADBlueprintFileCell ()
+@property (nonatomic, strong) UIImageView *imageViewPoint;
+@end
+
+@implementation CADBlueprintFileCell
+
+
+
++ (CADBlueprintFileCell *)createTableViewCellWith:(UITableView *)tableView withModel:(id)model{
+	
+	static NSString *cellID = @"DeviceListTableViewCell";
+	
+	CADBlueprintFileCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+	
+	if (!cell) {
+		cell = [[CADBlueprintFileCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID];
+	}
+	
+	[cell creatViewCellWithModel:model];
+	return cell;
+}
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+	
+	if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+		
+		[self createTableViewCell];
+	}
+	
+	return self;
+}
+- (void)createTableViewCell{
+	if (_imageViewPoint) {
+		return;
+	}
+	
+	self.imageViewPoint = [UIView CreateDefalultImageViewWitiImageStr:@"3Point"];
+	[self.imageViewPoint sizeToFit];
+	[self.contentView addSubview:self.imageViewPoint];
+}
+- (void)layoutSubviews{
+	
+	self.imageViewPoint.frame = CGRectMake(self.width - 15 - self.imageViewPoint.width, 0, self.imageViewPoint.width, self.imageViewPoint.height);
+	self.imageViewPoint.centerY = self.height/2;
+}
+
+- (void)creatViewCellWithModel:(id)model{
+	
+}
+
 @end

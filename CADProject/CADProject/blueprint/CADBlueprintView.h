@@ -33,4 +33,9 @@ typedef void(^CADBlueprintCellViewBlock)(NSInteger index);
 - (instancetype)initWithFrame:(CGRect)frame block:(CADBlueprintCellViewBlock)block;
 @end
 
+@interface CADBlueprintFileCell : UITableViewCell
+
++ (PEDeviceListTableViewCell *)createTableViewCellWith:(UITableView *)tableView withModel:(id)model;
+- (void)createGetModel:(PEDeviceGetModel *)getModel;
+@end
 NS_ASSUME_NONNULL_END
