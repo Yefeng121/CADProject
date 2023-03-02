@@ -16,6 +16,7 @@
 		0407F52629AE4F7F00604D20 /* CADBlueprintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407F52529AE4F7F00604D20 /* CADBlueprintView.m */; };
 		0407F52929AE58D800604D20 /* UIView+CreateViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407F52829AE58D800604D20 /* UIView+CreateViews.m */; };
 		0407F52C29AF95E100604D20 /* CADBlueprintModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407F52B29AF95E100604D20 /* CADBlueprintModel.m */; };
+		0407F52F29B0F72F00604D20 /* CADWIFIImportVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407F52E29B0F72F00604D20 /* CADWIFIImportVController.m */; };
 		04BDD86B29A7C40C003A09F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDD86A29A7C40C003A09F8 /* AppDelegate.m */; };
 		04BDD87129A7C40C003A09F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDD87029A7C40C003A09F8 /* ViewController.m */; };
 		04BDD87429A7C40C003A09F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BDD87229A7C40C003A09F8 /* Main.storyboard */; };
@@ -57,6 +58,8 @@
 		0407F52829AE58D800604D20 /* UIView+CreateViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CreateViews.m"; sourceTree = "<group>"; };
 		0407F52A29AF95E100604D20 /* CADBlueprintModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADBlueprintModel.h; sourceTree = "<group>"; };
 		0407F52B29AF95E100604D20 /* CADBlueprintModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADBlueprintModel.m; sourceTree = "<group>"; };
+		0407F52D29B0F72F00604D20 /* CADWIFIImportVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADWIFIImportVController.h; sourceTree = "<group>"; };
+		0407F52E29B0F72F00604D20 /* CADWIFIImportVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADWIFIImportVController.m; sourceTree = "<group>"; };
 		04BDD86629A7C40C003A09F8 /* CADProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CADProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BDD86929A7C40C003A09F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04BDD86A29A7C40C003A09F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 			children = (
 				0407F52129AD042400604D20 /* CADBlueprintViewController.h */,
 				0407F52229AD042400604D20 /* CADBlueprintViewController.m */,
+				0407F52D29B0F72F00604D20 /* CADWIFIImportVController.h */,
+				0407F52E29B0F72F00604D20 /* CADWIFIImportVController.m */,
 				0407F52429AE4F7F00604D20 /* CADBlueprintView.h */,
 				0407F52529AE4F7F00604D20 /* CADBlueprintView.m */,
 				0407F52A29AF95E100604D20 /* CADBlueprintModel.h */,
@@ -418,6 +423,7 @@
 				0CEABFE629ACA8D400E823A9 /* SYNavigationItemBtnView.m in Sources */,
 				0407F51A29AD033A00604D20 /* CADCloudViewController.m in Sources */,
 				04BDD87C29A7C410003A09F8 /* main.m in Sources */,
+				0407F52F29B0F72F00604D20 /* CADWIFIImportVController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
