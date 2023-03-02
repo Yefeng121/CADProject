@@ -24,6 +24,11 @@
 
     return [self hexStringToColor:@"101D34"];
 }
+
++ (UIColor *)C_F0FAF6{
+
+    return [self hexStringToColor:@"F0FAF6"];
+}
 + (UIColor *)C_F1F5F8{
 
     return [self hexStringToColor:@"F1F5F8"];

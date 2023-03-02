@@ -28,22 +28,10 @@
 }
 -(void)loadBViewControllers{
     
-        // 通过appearance统一设置UITabbarItem的文字属性
-//    NSMutableDictionary * attrs = [NSMutableDictionary dictionary];
-//    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:14.0];  // 设置文字大小
-//    attrs[NSForegroundColorAttributeName] = [UIColor blackColor];  // 设置文字的前景色
-//
-//    NSMutableDictionary * selectedAttrs = [NSMutableDictionary dictionary];
-//    selectedAttrs[NSFontAttributeName] = attrs[NSFontAttributeName];
-//    selectedAttrs[NSForegroundColorAttributeName] = [UIColor blueColor];
-//
-//    UITabBarItem * item = [UITabBarItem appearance];  // 设置appearance
-//    [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
-//    [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
     
     NSArray *titleArr = @[@"图纸",@"工程验收",@"",@"云盘",@"我的"];
-    NSArray *norImageArr= @[@"TAB_Blueprint_N",@"TAB_Project_N",@"TAB_Add",@"TAB_Cloud_N",@"TAB_Mine_N"];
-    NSArray *selectImageArr = @[@"TAB_Blueprint_S",@"TAB_Project_S",@"TAB_Add",@"TAB_Cloud_S",@"TAB_Mine_S"];
+    NSArray *norImageArr= @[@"Tab_Blueprint_N",@"Tab_Project_N",@"Tab_turn",@"Tab_Cloud_N",@"Tab_Mine_N"];
+    NSArray *selectImageArr = @[@"Tab_Blueprint_S",@"Tab_Project_S",@"Tab_turn",@"Tab_Cloud_S",@"Tab_Mine_S"];
 
     
     // 图纸
@@ -107,7 +95,7 @@
 
     // 选中状态下的文字属性
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-    selectedAttrs[NSForegroundColorAttributeName] = [UIColor blueColor];
+    selectedAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
     [listItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
     listItem.selectedImage = (seletImage.length)?[[UIImage imageNamed:seletImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]:nil;
     

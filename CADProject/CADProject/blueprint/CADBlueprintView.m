@@ -14,7 +14,7 @@
 @property (nonatomic, strong) UIButton *btnVip;
 
 @property (nonatomic, strong) CADBlueprintBtnView *btnView;
-
+@property (nonatomic, strong) CADBlueprintProjectView *proView;
 @property (nonatomic, strong) CADBlueprintCellView *cellView;
 @end
 
@@ -42,18 +42,23 @@
     [self.btnVip sizeToFit];
     self.btnVip.frame = CGRectMake(self.width - 27.5 - self.btnVip.width, 49, self.btnVip.width, self.btnVip.height);
     [self addSubview:self.btnVip];
-    
     self.btnCAD.centerY = self.btnVip.centerY;
     
     PEWeak(self, weakSelf);
-    CGFloat cellW = (self.width - 21*2 - 15*3)/4;
-    self.btnView = [[CADBlueprintBtnView alloc] initWithFrame:CGRectMake(0, self.btnCAD.bottom + 27, self.width, cellW) block:^(NSInteger index) {
+    CGFloat cellH = (self.width - 21*2 - 15*3)/4;
+    self.btnView = [[CADBlueprintBtnView alloc] initWithFrame:CGRectMake(0, self.btnCAD.bottom + 27, self.width, cellH) block:^(NSInteger index) {
         if(weakSelf.BlueprintViewBlock) weakSelf.BlueprintViewBlock(index);
     }];
     
     [self addSubview:self.btnView];
     
-    self.cellView = [[CADBlueprintCellView alloc] initWithFrame:CGRectMake(15, self.btnView.bottom + 15, self.btnView.width - 30, self.height - 320) block:^(NSInteger index) {
+    CGFloat proViewH = 66;
+    self.proView = [[CADBlueprintProjectView alloc] initWithFrame:CGRectMake(21, self.btnView.bottom + 15, self.width - 42, proViewH) block:^(NSInteger index) {
+        
+    }];
+    [self addSubview:self.proView];
+    
+    self.cellView = [[CADBlueprintCellView alloc] initWithFrame:CGRectMake(21, self.proView.bottom + 15, self.width - 42, self.height - self.proView.bottom - 140) block:^(NSInteger index) {
         
     }];
     [self addSubview:self.cellView];
@@ -65,6 +70,9 @@
 }
 
 @end
+
+// MARK: -------- 四个按钮 WiFi导入...
+
 @interface CADBlueprintBtnView ()
 @end
 
@@ -82,17 +90,17 @@
 - (void)createView{
     
     CGFloat cellW = (self.width - 21*2 - 15*3)/4;
-    [self createBtnViewWithTitle:@"导入教程" imageName:@"gszh" frame:CGRectMake(21, 0, cellW, cellW) tag:100];
-    [self createBtnViewWithTitle:@"WIFI导入" imageName:@"Download" frame:CGRectMake(21 + cellW + 15, 0, cellW, cellW) tag:101];
-    [self createBtnViewWithTitle:@"项目管理" imageName:@"yjsy" frame:CGRectMake(21 + (cellW + 15) * 2, 0, cellW, cellW) tag:102];
-    [self createBtnViewWithTitle:@"DWG 转PDF" imageName:@"tzsm" frame:CGRectMake(21 + (cellW + 15) * 3, 0, cellW, cellW) tag:103];
     
+    [self createBtnViewWithTitle:@"WIFI导入" imageName:@"Download" frame:CGRectMake(21, 0, cellW, cellW) tag:100];
+    [self createBtnViewWithTitle:@"项目管理" imageName:@"yjsy" frame:CGRectMake(21 + cellW + 15, 0, cellW, cellW) tag:101];
+    [self createBtnViewWithTitle:@"DWG 转PDF" imageName:@"tzsm" frame:CGRectMake(21 + (cellW + 15) * 2, 0, cellW, cellW) tag:102];
+    [self createBtnViewWithTitle:@"DWG 转图片" imageName:@"turnImage" frame:CGRectMake(21 + (cellW + 15) * 3, 0, cellW, cellW) tag:103];
 }
 
 - (void)createBtnViewWithTitle:(NSString *)title imageName:(NSString *)imageName frame:(CGRect)frame tag:(NSInteger)tag{
     
     UIControl *control = [[UIControl alloc] initWithFrame:frame];
-    control.backgroundColor = [UIColor C_F1F5F8];
+    control.backgroundColor = [UIColor C_F0FAF6];
     control.layer.cornerRadius = 10;
     control.layer.masksToBounds = YES;
     control.tag = tag;
@@ -118,6 +126,58 @@
     if(self.btnViewBlock) self.btnViewBlock(con.tag);
 }
 @end
+
+@interface CADBlueprintProjectView ()
+@end
+
+@implementation CADBlueprintProjectView
+
+- (instancetype)initWithFrame:(CGRect)frame block:(CADBlueprintViewBlock)block{
+    
+    if(self = [super initWithFrame:frame]){
+        self.ProjectViewBlock = block;
+        [self createView];
+    }
+    return self;
+}
+
+- (void)createView{
+    
+    
+    UIButton *btnBack = [UIView CreateDefaultBtnWithImageName:@"" Target:self action:@selector(viewTouched:)];
+    [btnBack setBackgroundImage:[UIImage imageNamed:@"ProjectBack"] forState:UIControlStateNormal];
+    btnBack.frame = CGRectMake(0, 0, self.width, self.height);
+    [self addSubview:btnBack];
+    
+    UILabel *labelTitle = [UIView CreateDefalutLabelFont:UIFontWithBoldSize(14) textColor:[UIColor C_101D34] textAlignment:NSTextAlignmentLeft];
+    labelTitle.text = @"导入教程";
+    [labelTitle sizeToFit];
+    labelTitle.frame = CGRectMake(24, 17, labelTitle.width, labelTitle.height);
+    [self addSubview:labelTitle];
+    
+    UILabel *labelContent = [UIView CreateDefalutLabelFont:UIFontWithSize(12) textColor:[UIColor C_101D34] textAlignment:NSTextAlignmentLeft];
+    labelContent.text = @"点击查看教程详情";
+    [labelContent sizeToFit];
+    labelContent.frame = CGRectMake(24, labelTitle.bottom + 7, labelContent.width, labelContent.height);
+    [self addSubview:labelContent];
+    
+    UIImageView *imageView = [UIView CreateDefalultImageViewWitiImageStr:@"gszh"];
+    [imageView sizeToFit];
+    imageView.frame = CGRectMake(self.width - 26 - imageView.width, 0, imageView.width, imageView.height);
+    imageView.centerY = self.height/2;
+    [self addSubview:imageView];
+    
+    
+    
+}
+
+- (void)viewTouched:(UIButton *)btn{
+    
+    if(self.ProjectViewBlock) self.ProjectViewBlock(btn.tag);
+}
+@end
+// MARK: -------- 最近文件/验收文件
+
 @interface CADBlueprintCellView ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UIButton *btnSelected;
 @property (nonatomic, strong) UITableView *tableView;
@@ -139,7 +199,7 @@
 
 - (void)createView{
     
-    self.backgroundColor = [UIColor C_F1F5F8];
+    self.backgroundColor = [UIColor C_F0FAF6];
     self.layer.cornerRadius = 15;
     self.layer.masksToBounds = YES;
     
@@ -213,6 +273,7 @@
 	self.tableView.scrollEnabled=YES;
 	self.tableView.contentInsetAdjustmentBehavior = NO;
     self.tableView.tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.tableView.width, 1)];
+    self.tableView.backgroundColor = [UIColor C_F0FAF6];
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     if(self.btnSelected.tag == 200){
@@ -261,6 +322,9 @@
     if(self.cellViewBlock) self.cellViewBlock(btn.tag);
 }
 @end
+
+// MARK: -------- FileCel
+
 @interface CADBlueprintFileCell ()
 @property (nonatomic, strong) UIImageView *imageViewPoint;
 @property (nonatomic, strong) UIImageView *imageType;
