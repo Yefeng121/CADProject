@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class CADBlueprintBtnView,CADBlueprintView;
+@class CADBlueprintBtnView,CADBlueprintView,CADBlueprintModel;
 
 typedef void(^CADBlueprintViewBlock)(NSInteger index);
 
@@ -35,7 +35,6 @@ typedef void(^CADBlueprintCellViewBlock)(NSInteger index);
 
 @interface CADBlueprintFileCell : UITableViewCell
 
-+ (PEDeviceListTableViewCell *)createTableViewCellWith:(UITableView *)tableView withModel:(id)model;
-- (void)createGetModel:(PEDeviceGetModel *)getModel;
++ (CADBlueprintFileCell *)createTableViewCellWith:(UITableView *)tableView withModel:(id)model;
 @end
 NS_ASSUME_NONNULL_END
