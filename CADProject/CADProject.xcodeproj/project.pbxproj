@@ -24,6 +24,7 @@
 		04BDD87929A7C410003A09F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BDD87729A7C410003A09F8 /* LaunchScreen.storyboard */; };
 		04BDD87C29A7C410003A09F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDD87B29A7C410003A09F8 /* main.m */; };
 		04BDD88829A7C6E1003A09F8 /* CADGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDD88729A7C6E1003A09F8 /* CADGuideViewController.m */; };
+		0CD641F029B19B84001DE8C3 /* UIView+SYViewShowAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD641EF29B19B84001DE8C3 /* UIView+SYViewShowAlert.m */; };
 		0CEABFD729ACA88200E823A9 /* JZBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFD329ACA88200E823A9 /* JZBaseTableViewCell.m */; };
 		0CEABFD829ACA88200E823A9 /* JZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFD429ACA88200E823A9 /* JZBaseViewController.m */; };
 		0CEABFD929ACA88200E823A9 /* JZBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFD529ACA88200E823A9 /* JZBaseTableViewController.m */; };
@@ -72,6 +73,8 @@
 		04BDD87B29A7C410003A09F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04BDD88629A7C6E1003A09F8 /* CADGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADGuideViewController.h; sourceTree = "<group>"; };
 		04BDD88729A7C6E1003A09F8 /* CADGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADGuideViewController.m; sourceTree = "<group>"; };
+		0CD641EE29B19B84001DE8C3 /* UIView+SYViewShowAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SYViewShowAlert.h"; sourceTree = "<group>"; };
+		0CD641EF29B19B84001DE8C3 /* UIView+SYViewShowAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SYViewShowAlert.m"; sourceTree = "<group>"; };
 		0CEABFD129ACA88200E823A9 /* JZBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZBaseViewController.h; sourceTree = "<group>"; };
 		0CEABFD229ACA88200E823A9 /* JZBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZBaseTableViewController.h; sourceTree = "<group>"; };
 		0CEABFD329ACA88200E823A9 /* JZBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZBaseTableViewCell.m; sourceTree = "<group>"; };
@@ -281,6 +284,8 @@
 				0CEABFF729ACBB9900E823A9 /* UIColor+JZColor.m */,
 				0407F52729AE58D800604D20 /* UIView+CreateViews.h */,
 				0407F52829AE58D800604D20 /* UIView+CreateViews.m */,
+				0CD641EE29B19B84001DE8C3 /* UIView+SYViewShowAlert.h */,
+				0CD641EF29B19B84001DE8C3 /* UIView+SYViewShowAlert.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 				04BDD86229A7C40C003A09F8 /* Sources */,
 				04BDD86329A7C40C003A09F8 /* Frameworks */,
 				04BDD86429A7C40C003A09F8 /* Resources */,
+				1D898865BF6E753DD2937D04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,6 +375,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D898865BF6E753DD2937D04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CADProject/Pods-CADProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CADProject/Pods-CADProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CADProject/Pods-CADProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C4A9A7F4A03919C44BB435C3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -410,6 +433,7 @@
 				04BDD88829A7C6E1003A09F8 /* CADGuideViewController.m in Sources */,
 				0CEABFD929ACA88200E823A9 /* JZBaseTableViewController.m in Sources */,
 				0CEABFF829ACBB9900E823A9 /* UIColor+JZColor.m in Sources */,
+				0CD641F029B19B84001DE8C3 /* UIView+SYViewShowAlert.m in Sources */,
 				0CEABFED29ACA98A00E823A9 /* UIView+xframe.m in Sources */,
 				0407F52929AE58D800604D20 /* UIView+CreateViews.m in Sources */,
 				0407F51729AD031500604D20 /* CADMineViewController.m in Sources */,

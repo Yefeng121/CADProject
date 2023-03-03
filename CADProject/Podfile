@@ -6,5 +6,6 @@ target 'CADProject' do
   use_frameworks!
 
   # Pods for CADProject
-
+	
+	pod 'MBProgressHUD', '~> 0.9.2'
 end

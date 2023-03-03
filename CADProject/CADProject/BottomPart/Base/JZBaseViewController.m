@@ -54,7 +54,6 @@
 		[self SYShowBackButton:YES];
 	}
 	self.edgesForExtendedLayout =UIRectEdgeAll;
-	self.automaticallyAdjustsScrollViewInsets = NO;
 	[self initView];
 	self.navBarItem.titleLabel.textColor = [UIColor blackColor];
 	[self.navBarItem.backView setBackgroundColor:[UIColor C_baseGreen]];
@@ -69,7 +68,7 @@
 	
 	self.navBarItem.lineView.hidden = YES;
 	self.view.backgroundColor = [UIColor whiteColor];
-	[self SYLeftBtnWithImageName:@"videoBack1" title:@""];
+	[self SYLeftBtnWithImageName:@"GoBack" title:@""];
 }
 -(void)setAutoTextResponder:(BOOL)autoTextResponder{
 	_autoTextResponder=autoTextResponder;
@@ -102,7 +101,7 @@
 	if (!self.navBarItem ) {
 		self.navBarItem = [[SYNavigationItem alloc]init];
 		self.navBarItem.showController=self;
-		self.navBarItem.backView.backgroundColor=[UIColor C_baseGreen];
+		self.navBarItem.backView.backgroundColor=[UIColor whiteColor];
 	}
 }
 -(void)SYLeftBtnWithImageName:(NSString *)imageName  title:(NSString *)title{
@@ -127,7 +126,7 @@
 }
 -(void)SYShowBackButton:(BOOL)showBack{
 	if (showBack) {
-		[self SYLeftBtnWithImageName:@"Arrow_Green" title:@""];
+		[self SYLeftBtnWithImageName:@"GoBack" title:@""];
 	}else{
 		[self SYLeftBtnWithImageName:nil title:nil];
 	}
@@ -160,8 +159,8 @@
 	}else{
 		self.navBarItem.navigationLeftBtn.goRootItem.hidden=YES;
 	}
-	UIImage *imageBackNormalW=ImageNamed(@"Arrow_Green");//backArrowRichTextDetail_whiteNew
-	UIImage *imageBackNormalB=ImageNamed(@"Arrow_Green");
+	UIImage *imageBackNormalW=ImageNamed(@"GoBack");//backArrowRichTextDetail_whiteNew
+	UIImage *imageBackNormalB=ImageNamed(@"GoBack");
 	if (self.navClearColor) {
 		if ([self.navBarItem.navigationLeftBtn.goBackItem imageForState:UIControlStateNormal]) {
 			if ([[self.navBarItem.navigationLeftBtn.goBackItem imageForState:UIControlStateNormal]isEqual:imageBackNormalW]||[[self.navBarItem.navigationLeftBtn.goBackItem imageForState:UIControlStateNormal]isEqual:imageBackNormalB]) {

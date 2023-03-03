@@ -6,6 +6,8 @@
 //
 
 #import "CADBlueprintViewController.h"
+#import "CADWIFIImportVController.h"
+
 #import "CADBlueprintView.h"
 
 @interface CADBlueprintViewController ()
@@ -23,6 +25,9 @@
     PEWeak(self, weakSelf);
     self.BlueprintView = [[CADBlueprintView alloc] initWithFrame:self.view.bounds block:^(NSInteger index) {
         NSLog(@" --------- %ld",index);
+		if (index == 100) {
+			[weakSelf.navigationController pushViewController:[CADWIFIImportVController new] animated:YES];
+		}
     }];
     [self.view addSubview:self.BlueprintView];
 }
