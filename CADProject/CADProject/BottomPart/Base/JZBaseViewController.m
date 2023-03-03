@@ -56,8 +56,7 @@
 	self.edgesForExtendedLayout =UIRectEdgeAll;
 	[self initView];
 	self.navBarItem.titleLabel.textColor = [UIColor blackColor];
-	[self.navBarItem.backView setBackgroundColor:[UIColor C_baseGreen]];
-	[self.navBarItem.backView setBackgroundColor:[UIColor C_baseGreen]];
+	[self.navBarItem.backView setBackgroundColor:[UIColor whiteColor]];
 	
 	// Do any additional setup after loading the view.
 	self.view.backgroundColor = [UIColor whiteColor];
