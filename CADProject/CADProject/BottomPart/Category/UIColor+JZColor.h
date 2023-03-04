@@ -11,6 +11,7 @@
 
 @interface UIColor (JZColor)
 
++ (UIColor *)C_42BB92;
 + (UIColor *)C_8195A5;
 + (UIColor *)C_101D34;
 + (UIColor *)C_F0FAF6;

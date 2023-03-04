@@ -16,6 +16,10 @@
 }
 
 
++ (UIColor *)C_42BB92{
+
+    return [self hexStringToColor:@"42BB92"];
+}
 + (UIColor *)C_8195A5{
 
     return [self hexStringToColor:@"8195A5"];
