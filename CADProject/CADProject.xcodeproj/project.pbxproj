@@ -17,6 +17,7 @@
 		0407F52929AE58D800604D20 /* UIView+CreateViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407F52829AE58D800604D20 /* UIView+CreateViews.m */; };
 		0407F52C29AF95E100604D20 /* CADBlueprintModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407F52B29AF95E100604D20 /* CADBlueprintModel.m */; };
 		0407F52F29B0F72F00604D20 /* CADWIFIImportVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407F52E29B0F72F00604D20 /* CADWIFIImportVController.m */; };
+		0407F53229B356CB00604D20 /* CADProjectManagerVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407F53129B356CB00604D20 /* CADProjectManagerVController.m */; };
 		04BDD86B29A7C40C003A09F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDD86A29A7C40C003A09F8 /* AppDelegate.m */; };
 		04BDD87129A7C40C003A09F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDD87029A7C40C003A09F8 /* ViewController.m */; };
 		04BDD87429A7C40C003A09F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BDD87229A7C40C003A09F8 /* Main.storyboard */; };
@@ -61,6 +62,8 @@
 		0407F52B29AF95E100604D20 /* CADBlueprintModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADBlueprintModel.m; sourceTree = "<group>"; };
 		0407F52D29B0F72F00604D20 /* CADWIFIImportVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADWIFIImportVController.h; sourceTree = "<group>"; };
 		0407F52E29B0F72F00604D20 /* CADWIFIImportVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADWIFIImportVController.m; sourceTree = "<group>"; };
+		0407F53029B356CB00604D20 /* CADProjectManagerVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADProjectManagerVController.h; sourceTree = "<group>"; };
+		0407F53129B356CB00604D20 /* CADProjectManagerVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADProjectManagerVController.m; sourceTree = "<group>"; };
 		04BDD86629A7C40C003A09F8 /* CADProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CADProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BDD86929A7C40C003A09F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04BDD86A29A7C40C003A09F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 			children = (
 				0407F51E29AD040000604D20 /* CADProjectViewController.h */,
 				0407F51F29AD040000604D20 /* CADProjectViewController.m */,
+				0407F53029B356CB00604D20 /* CADProjectManagerVController.h */,
+				0407F53129B356CB00604D20 /* CADProjectManagerVController.m */,
 			);
 			path = project;
 			sourceTree = "<group>";
@@ -430,6 +435,7 @@
 				0407F52329AD042400604D20 /* CADBlueprintViewController.m in Sources */,
 				0407F51D29AD03D800604D20 /* CADAddViewController.m in Sources */,
 				0CEABFE929ACA8D400E823A9 /* JZNavigationController.m in Sources */,
+				0407F53229B356CB00604D20 /* CADProjectManagerVController.m in Sources */,
 				04BDD88829A7C6E1003A09F8 /* CADGuideViewController.m in Sources */,
 				0CEABFD929ACA88200E823A9 /* JZBaseTableViewController.m in Sources */,
 				0CEABFF829ACBB9900E823A9 /* UIColor+JZColor.m in Sources */,

@@ -6,7 +6,7 @@
 //
 
 #import "CADProjectViewController.h"
-
+#import "CADProjectManagerVController.h"
 @interface CADProjectViewController ()
 
 @end
@@ -16,7 +16,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    CADProjectManagerVController *vc = [[CADProjectManagerVController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
+
 - (void)viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:animated];
 	
