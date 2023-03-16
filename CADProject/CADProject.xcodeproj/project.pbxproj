@@ -25,6 +25,9 @@
 		04BDD87929A7C410003A09F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BDD87729A7C410003A09F8 /* LaunchScreen.storyboard */; };
 		04BDD87C29A7C410003A09F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDD87B29A7C410003A09F8 /* main.m */; };
 		04BDD88829A7C6E1003A09F8 /* CADGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDD88729A7C6E1003A09F8 /* CADGuideViewController.m */; };
+		0C7C362629C2FD7B00387137 /* CADMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C362529C2FD7B00387137 /* CADMineView.m */; };
+		0C7C362929C301DE00387137 /* CADMineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C362829C301DE00387137 /* CADMineModel.m */; };
+		0C7C362C29C304E900387137 /* UIButton+SYImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C362B29C304E900387137 /* UIButton+SYImagePosition.m */; };
 		0CD641F029B19B84001DE8C3 /* UIView+SYViewShowAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD641EF29B19B84001DE8C3 /* UIView+SYViewShowAlert.m */; };
 		0CEABFD729ACA88200E823A9 /* JZBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFD329ACA88200E823A9 /* JZBaseTableViewCell.m */; };
 		0CEABFD829ACA88200E823A9 /* JZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFD429ACA88200E823A9 /* JZBaseViewController.m */; };
@@ -76,6 +79,12 @@
 		04BDD87B29A7C410003A09F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04BDD88629A7C6E1003A09F8 /* CADGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADGuideViewController.h; sourceTree = "<group>"; };
 		04BDD88729A7C6E1003A09F8 /* CADGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADGuideViewController.m; sourceTree = "<group>"; };
+		0C7C362429C2FD7B00387137 /* CADMineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADMineView.h; sourceTree = "<group>"; };
+		0C7C362529C2FD7B00387137 /* CADMineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADMineView.m; sourceTree = "<group>"; };
+		0C7C362729C301DE00387137 /* CADMineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADMineModel.h; sourceTree = "<group>"; };
+		0C7C362829C301DE00387137 /* CADMineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADMineModel.m; sourceTree = "<group>"; };
+		0C7C362A29C304E900387137 /* UIButton+SYImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SYImagePosition.h"; sourceTree = "<group>"; };
+		0C7C362B29C304E900387137 /* UIButton+SYImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SYImagePosition.m"; sourceTree = "<group>"; };
 		0CD641EE29B19B84001DE8C3 /* UIView+SYViewShowAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SYViewShowAlert.h"; sourceTree = "<group>"; };
 		0CD641EF29B19B84001DE8C3 /* UIView+SYViewShowAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SYViewShowAlert.m"; sourceTree = "<group>"; };
 		0CEABFD129ACA88200E823A9 /* JZBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZBaseViewController.h; sourceTree = "<group>"; };
@@ -179,6 +188,10 @@
 			children = (
 				0407F51529AD031500604D20 /* CADMineViewController.h */,
 				0407F51629AD031500604D20 /* CADMineViewController.m */,
+				0C7C362429C2FD7B00387137 /* CADMineView.h */,
+				0C7C362529C2FD7B00387137 /* CADMineView.m */,
+				0C7C362729C301DE00387137 /* CADMineModel.h */,
+				0C7C362829C301DE00387137 /* CADMineModel.m */,
 			);
 			path = mine;
 			sourceTree = "<group>";
@@ -214,6 +227,7 @@
 				04BDD86A29A7C40C003A09F8 /* AppDelegate.m */,
 				04BDD88629A7C6E1003A09F8 /* CADGuideViewController.h */,
 				04BDD88729A7C6E1003A09F8 /* CADGuideViewController.m */,
+				0CEABFF229ACB23500E823A9 /* PrefixHeader.pch */,
 				04BDD86F29A7C40C003A09F8 /* ViewController.h */,
 				04BDD87029A7C40C003A09F8 /* ViewController.m */,
 				04BDD87229A7C40C003A09F8 /* Main.storyboard */,
@@ -228,7 +242,6 @@
 		0CEABFCE29ACA88200E823A9 /* BottomPart */ = {
 			isa = PBXGroup;
 			children = (
-				0CEABFF229ACB23500E823A9 /* PrefixHeader.pch */,
 				0407F50C29AD013100604D20 /* TAB */,
 				0CEABFEA29ACA97100E823A9 /* Category */,
 				0CEABFCF29ACA88200E823A9 /* NAV */,
@@ -283,6 +296,8 @@
 				0CEABFEB29ACA98A00E823A9 /* UIView+xframe.m */,
 				0CEABFF029ACB21100E823A9 /* NSString+Additions.h */,
 				0CEABFEF29ACB21100E823A9 /* NSString+Additions.m */,
+				0C7C362A29C304E900387137 /* UIButton+SYImagePosition.h */,
+				0C7C362B29C304E900387137 /* UIButton+SYImagePosition.m */,
 				0CEABFF429ACBADB00E823A9 /* UIView+ExtendHitArea.h */,
 				0CEABFF329ACBADB00E823A9 /* UIView+ExtendHitArea.m */,
 				0CEABFF629ACBB9900E823A9 /* UIColor+JZColor.h */,
@@ -438,7 +453,9 @@
 				0407F53229B356CB00604D20 /* CADProjectManagerVController.m in Sources */,
 				04BDD88829A7C6E1003A09F8 /* CADGuideViewController.m in Sources */,
 				0CEABFD929ACA88200E823A9 /* JZBaseTableViewController.m in Sources */,
+				0C7C362C29C304E900387137 /* UIButton+SYImagePosition.m in Sources */,
 				0CEABFF829ACBB9900E823A9 /* UIColor+JZColor.m in Sources */,
+				0C7C362929C301DE00387137 /* CADMineModel.m in Sources */,
 				0CD641F029B19B84001DE8C3 /* UIView+SYViewShowAlert.m in Sources */,
 				0CEABFED29ACA98A00E823A9 /* UIView+xframe.m in Sources */,
 				0407F52929AE58D800604D20 /* UIView+CreateViews.m in Sources */,
@@ -446,6 +463,7 @@
 				0CEABFF129ACB21200E823A9 /* NSString+Additions.m in Sources */,
 				0407F52C29AF95E100604D20 /* CADBlueprintModel.m in Sources */,
 				0CEABFE529ACA8D400E823A9 /* MSNavigationButton.m in Sources */,
+				0C7C362629C2FD7B00387137 /* CADMineView.m in Sources */,
 				0CEABFF529ACBADB00E823A9 /* UIView+ExtendHitArea.m in Sources */,
 				0CEABFE829ACA8D400E823A9 /* SYNavigationItem.m in Sources */,
 				0CEABFD729ACA88200E823A9 /* JZBaseTableViewCell.m in Sources */,
@@ -599,7 +617,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GCC_PREFIX_HEADER = CADProject/BottomPart/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = CADProject/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CADProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -627,7 +645,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GCC_PREFIX_HEADER = CADProject/BottomPart/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = CADProject/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CADProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

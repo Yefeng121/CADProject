@@ -10,30 +10,45 @@
 
 @implementation JZBaseTableViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+
++ (JZBaseTableViewCell *)createTableViewCellWith:(UITableView *)tableView withModel:(id)model{
+	
+	static NSString *cellID = @"JZBaseTableViewCell";
+	
+	JZBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+	
+	if (!cell) {
+		cell = [[JZBaseTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID];
+	}
+	
+	[cell creatViewCellWithModel:model];
+	return cell;
+}
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+	
+	if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+		
+		[self createTableViewCell];
+	}
+	
+	return self;
+}
+- (void)createTableViewCell{
+	
+	
+}
+
+- (void)creatViewCellWithModel:(id)model{
+	
+}
+- (void)createGetModel:(id)getModel{
+	
+	
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
 	[super setSelected:selected animated:animated];
 
-	// Configure the view for the selected state
-}
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
-	
-	if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-		
-//		self.selectionStyle = UITableViewCellSelectionStyleNone;
-	}
-	
-	return self;
-}
-//在自定义cell中实现，两种方法都可行，一个是改颜色，一个是用图片
-
--(void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
-//
-	[super setHighlighted:highlighted animated:animated];
-	
 }
 @end

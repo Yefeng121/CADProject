@@ -5,11 +5,11 @@
 //  Created by Jacy on 2023/2/27.
 //
 
-#import "JZBaseViewController.h"
+#import "JZBaseTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CADMineViewController : JZBaseViewController
+@interface CADMineViewController : JZBaseTableViewController
 
 @end
 
