@@ -28,6 +28,12 @@
 		0C7C362629C2FD7B00387137 /* CADMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C362529C2FD7B00387137 /* CADMineView.m */; };
 		0C7C362929C301DE00387137 /* CADMineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C362829C301DE00387137 /* CADMineModel.m */; };
 		0C7C362C29C304E900387137 /* UIButton+SYImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C362B29C304E900387137 /* UIButton+SYImagePosition.m */; };
+		0C7C362F29C9810900387137 /* CADAddProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C362E29C9810900387137 /* CADAddProjectViewController.m */; };
+		0C7C363229C991CB00387137 /* CADTeamMembersVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C363129C991CB00387137 /* CADTeamMembersVController.m */; };
+		0C7C363529C9925B00387137 /* CADTeamMembersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C363429C9925B00387137 /* CADTeamMembersView.m */; };
+		0C7C363829C9944800387137 /* CADMembersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C363729C9944800387137 /* CADMembersModel.m */; };
+		0C7C363B29C9AE8C00387137 /* CADProjectListVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C363A29C9AE8C00387137 /* CADProjectListVController.m */; };
+		0C7C363E29C9B25800387137 /* CADPProjectListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C363D29C9B25800387137 /* CADPProjectListView.m */; };
 		0CD641F029B19B84001DE8C3 /* UIView+SYViewShowAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD641EF29B19B84001DE8C3 /* UIView+SYViewShowAlert.m */; };
 		0CEABFD729ACA88200E823A9 /* JZBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFD329ACA88200E823A9 /* JZBaseTableViewCell.m */; };
 		0CEABFD829ACA88200E823A9 /* JZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFD429ACA88200E823A9 /* JZBaseViewController.m */; };
@@ -85,6 +91,18 @@
 		0C7C362829C301DE00387137 /* CADMineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADMineModel.m; sourceTree = "<group>"; };
 		0C7C362A29C304E900387137 /* UIButton+SYImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SYImagePosition.h"; sourceTree = "<group>"; };
 		0C7C362B29C304E900387137 /* UIButton+SYImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SYImagePosition.m"; sourceTree = "<group>"; };
+		0C7C362D29C9810900387137 /* CADAddProjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADAddProjectViewController.h; sourceTree = "<group>"; };
+		0C7C362E29C9810900387137 /* CADAddProjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADAddProjectViewController.m; sourceTree = "<group>"; };
+		0C7C363029C991CB00387137 /* CADTeamMembersVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADTeamMembersVController.h; sourceTree = "<group>"; };
+		0C7C363129C991CB00387137 /* CADTeamMembersVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADTeamMembersVController.m; sourceTree = "<group>"; };
+		0C7C363329C9925B00387137 /* CADTeamMembersView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADTeamMembersView.h; sourceTree = "<group>"; };
+		0C7C363429C9925B00387137 /* CADTeamMembersView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADTeamMembersView.m; sourceTree = "<group>"; };
+		0C7C363629C9944800387137 /* CADMembersModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADMembersModel.h; sourceTree = "<group>"; };
+		0C7C363729C9944800387137 /* CADMembersModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADMembersModel.m; sourceTree = "<group>"; };
+		0C7C363929C9AE8C00387137 /* CADProjectListVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADProjectListVController.h; sourceTree = "<group>"; };
+		0C7C363A29C9AE8C00387137 /* CADProjectListVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADProjectListVController.m; sourceTree = "<group>"; };
+		0C7C363C29C9B25800387137 /* CADPProjectListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADPProjectListView.h; sourceTree = "<group>"; };
+		0C7C363D29C9B25800387137 /* CADPProjectListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADPProjectListView.m; sourceTree = "<group>"; };
 		0CD641EE29B19B84001DE8C3 /* UIView+SYViewShowAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SYViewShowAlert.h"; sourceTree = "<group>"; };
 		0CD641EF29B19B84001DE8C3 /* UIView+SYViewShowAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SYViewShowAlert.m"; sourceTree = "<group>"; };
 		0CEABFD129ACA88200E823A9 /* JZBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZBaseViewController.h; sourceTree = "<group>"; };
@@ -161,6 +179,18 @@
 				0407F51F29AD040000604D20 /* CADProjectViewController.m */,
 				0407F53029B356CB00604D20 /* CADProjectManagerVController.h */,
 				0407F53129B356CB00604D20 /* CADProjectManagerVController.m */,
+				0C7C362D29C9810900387137 /* CADAddProjectViewController.h */,
+				0C7C362E29C9810900387137 /* CADAddProjectViewController.m */,
+				0C7C363029C991CB00387137 /* CADTeamMembersVController.h */,
+				0C7C363129C991CB00387137 /* CADTeamMembersVController.m */,
+				0C7C363329C9925B00387137 /* CADTeamMembersView.h */,
+				0C7C363429C9925B00387137 /* CADTeamMembersView.m */,
+				0C7C363629C9944800387137 /* CADMembersModel.h */,
+				0C7C363729C9944800387137 /* CADMembersModel.m */,
+				0C7C363929C9AE8C00387137 /* CADProjectListVController.h */,
+				0C7C363A29C9AE8C00387137 /* CADProjectListVController.m */,
+				0C7C363C29C9B25800387137 /* CADPProjectListView.h */,
+				0C7C363D29C9B25800387137 /* CADPProjectListView.m */,
 			);
 			path = project;
 			sourceTree = "<group>";
@@ -444,9 +474,11 @@
 				0CEABFE729ACA8D400E823A9 /* SYNavigationitemLeftView.m in Sources */,
 				04BDD87129A7C40C003A09F8 /* ViewController.m in Sources */,
 				0407F50F29AD019100604D20 /* JZTabbarViewController.m in Sources */,
+				0C7C363829C9944800387137 /* CADMembersModel.m in Sources */,
 				0407F52629AE4F7F00604D20 /* CADBlueprintView.m in Sources */,
 				04BDD86B29A7C40C003A09F8 /* AppDelegate.m in Sources */,
 				0CEABFD829ACA88200E823A9 /* JZBaseViewController.m in Sources */,
+				0C7C363529C9925B00387137 /* CADTeamMembersView.m in Sources */,
 				0407F52329AD042400604D20 /* CADBlueprintViewController.m in Sources */,
 				0407F51D29AD03D800604D20 /* CADAddViewController.m in Sources */,
 				0CEABFE929ACA8D400E823A9 /* JZNavigationController.m in Sources */,
@@ -466,12 +498,16 @@
 				0C7C362629C2FD7B00387137 /* CADMineView.m in Sources */,
 				0CEABFF529ACBADB00E823A9 /* UIView+ExtendHitArea.m in Sources */,
 				0CEABFE829ACA8D400E823A9 /* SYNavigationItem.m in Sources */,
+				0C7C363B29C9AE8C00387137 /* CADProjectListVController.m in Sources */,
+				0C7C363E29C9B25800387137 /* CADPProjectListView.m in Sources */,
 				0CEABFD729ACA88200E823A9 /* JZBaseTableViewCell.m in Sources */,
 				0407F52029AD040000604D20 /* CADProjectViewController.m in Sources */,
 				0CEABFE629ACA8D400E823A9 /* SYNavigationItemBtnView.m in Sources */,
 				0407F51A29AD033A00604D20 /* CADCloudViewController.m in Sources */,
 				04BDD87C29A7C410003A09F8 /* main.m in Sources */,
 				0407F52F29B0F72F00604D20 /* CADWIFIImportVController.m in Sources */,
+				0C7C363229C991CB00387137 /* CADTeamMembersVController.m in Sources */,
+				0C7C362F29C9810900387137 /* CADAddProjectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
