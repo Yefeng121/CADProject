@@ -25,6 +25,8 @@
 		04BDD87929A7C410003A09F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BDD87729A7C410003A09F8 /* LaunchScreen.storyboard */; };
 		04BDD87C29A7C410003A09F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDD87B29A7C410003A09F8 /* main.m */; };
 		04BDD88829A7C6E1003A09F8 /* CADGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDD88729A7C6E1003A09F8 /* CADGuideViewController.m */; };
+		04DF36D729CB3D7C00C45747 /* CADRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF36D329CB3D7C00C45747 /* CADRequestModel.m */; };
+		04DF36D829CB3D7C00C45747 /* CADNetworkingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF36D429CB3D7C00C45747 /* CADNetworkingTool.m */; };
 		0C7C362629C2FD7B00387137 /* CADMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C362529C2FD7B00387137 /* CADMineView.m */; };
 		0C7C362929C301DE00387137 /* CADMineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C362829C301DE00387137 /* CADMineModel.m */; };
 		0C7C362C29C304E900387137 /* UIButton+SYImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C362B29C304E900387137 /* UIButton+SYImagePosition.m */; };
@@ -87,6 +89,10 @@
 		04BDD87B29A7C410003A09F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04BDD88629A7C6E1003A09F8 /* CADGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADGuideViewController.h; sourceTree = "<group>"; };
 		04BDD88729A7C6E1003A09F8 /* CADGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADGuideViewController.m; sourceTree = "<group>"; };
+		04DF36D329CB3D7C00C45747 /* CADRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADRequestModel.m; sourceTree = "<group>"; };
+		04DF36D429CB3D7C00C45747 /* CADNetworkingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADNetworkingTool.m; sourceTree = "<group>"; };
+		04DF36D529CB3D7C00C45747 /* CADNetworkingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADNetworkingTool.h; sourceTree = "<group>"; };
+		04DF36D629CB3D7C00C45747 /* CADRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADRequestModel.h; sourceTree = "<group>"; };
 		0C7C362429C2FD7B00387137 /* CADMineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADMineView.h; sourceTree = "<group>"; };
 		0C7C362529C2FD7B00387137 /* CADMineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADMineView.m; sourceTree = "<group>"; };
 		0C7C362729C301DE00387137 /* CADMineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADMineModel.h; sourceTree = "<group>"; };
@@ -277,6 +283,17 @@
 			path = CADProject;
 			sourceTree = "<group>";
 		};
+		04DF36D229CB3D7C00C45747 /* XMNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				04DF36D629CB3D7C00C45747 /* CADRequestModel.h */,
+				04DF36D329CB3D7C00C45747 /* CADRequestModel.m */,
+				04DF36D529CB3D7C00C45747 /* CADNetworkingTool.h */,
+				04DF36D429CB3D7C00C45747 /* CADNetworkingTool.m */,
+			);
+			path = XMNetworking;
+			sourceTree = "<group>";
+		};
 		0C7C363F29CAAC7800387137 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +308,7 @@
 		0CEABFCE29ACA88200E823A9 /* BottomPart */ = {
 			isa = PBXGroup;
 			children = (
+				04DF36D229CB3D7C00C45747 /* XMNetworking */,
 				0C7C363F29CAAC7800387137 /* Tool */,
 				0407F50C29AD013100604D20 /* TAB */,
 				0CEABFEA29ACA97100E823A9 /* Category */,
@@ -494,6 +512,7 @@
 				0CEABFE729ACA8D400E823A9 /* SYNavigationitemLeftView.m in Sources */,
 				04BDD87129A7C40C003A09F8 /* ViewController.m in Sources */,
 				0407F50F29AD019100604D20 /* JZTabbarViewController.m in Sources */,
+				04DF36D729CB3D7C00C45747 /* CADRequestModel.m in Sources */,
 				0C7C364229CAAEE900387137 /* JZDocumentPickerViewTool.m in Sources */,
 				0C7C363829C9944800387137 /* CADMembersModel.m in Sources */,
 				0407F52629AE4F7F00604D20 /* CADBlueprintView.m in Sources */,
@@ -512,6 +531,7 @@
 				0C7C362929C301DE00387137 /* CADMineModel.m in Sources */,
 				0CD641F029B19B84001DE8C3 /* UIView+SYViewShowAlert.m in Sources */,
 				0CEABFED29ACA98A00E823A9 /* UIView+xframe.m in Sources */,
+				04DF36D829CB3D7C00C45747 /* CADNetworkingTool.m in Sources */,
 				0407F52929AE58D800604D20 /* UIView+CreateViews.m in Sources */,
 				0407F51729AD031500604D20 /* CADMineViewController.m in Sources */,
 				0CEABFF129ACB21200E823A9 /* NSString+Additions.m in Sources */,

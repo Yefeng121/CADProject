@@ -62,12 +62,11 @@ static JZDocumentPickerViewTool *pickerViewTool = nil;
 					NSString *fileName = [newURL lastPathComponent];
 					NSError *error = nil;
 					NSData *fileData = [NSData dataWithContentsOfURL:newURL options:NSDataReadingMappedIfSafe error:&error];
+                    NSString *toPath = [[CADFileManagerTool getDocumentPath] stringByAppendingString:@"/CADFile"];
 					if (error) {
 							//读取出错
 					} else {
-						NSLog(@"上传===%@",fileName);
-							//上传
-							//                [self uploadingWithFileData:fileData fileName:fileName fileURL:newURL];
+                        [CADFileManagerTool writeToFile:toPath contents:fileData];
 					}
 					
 					[self.targetVC dismissViewControllerAnimated:YES completion:NULL];
@@ -76,9 +75,9 @@ static JZDocumentPickerViewTool *pickerViewTool = nil;
 			} else {
 				
 			}
-//			NSString *toPath = [[CADFileManagerTool getDocumentPath] stringByAppendingString:@"/CADFile"];
+			NSString *toPath = [[CADFileManagerTool getDocumentPath] stringByAppendingString:@"/CADFile"];
 //			if([CADFileManagerTool creatDir:toPath]){
-//				NSData *fileData = [NSData dataWithContentsOfURL:[urls firstObject]];
+////				NSData *fileData = [NSData dataWithContentsOfURL:[urls firstObject]];
 //				[CADFileManagerTool writeToFile:toPath contents:fileData];
 //				if(self.ToolBlock){
 //					self.ToolBlock([urls lastObject]);
