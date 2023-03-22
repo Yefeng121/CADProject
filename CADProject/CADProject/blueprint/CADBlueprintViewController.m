@@ -20,6 +20,9 @@
     [super viewDidLoad];
     
     [self createMainView];
+	
+	NSArray *imageArray = [CADFileManagerTool getAllFileList:[CADFileManagerTool getDocumentPathCADFile]];
+	NSLog(@"-------- %@",imageArray);
 }
 - (void)createMainView{
     PEWeak(self, weakSelf);
@@ -27,9 +30,21 @@
         NSLog(@" --------- %ld",index);
 		if (index == 100) {
 			[weakSelf.navigationController pushViewController:[CADWIFIImportVController new] animated:YES];
+		}else if(index == 101){
+			[weakSelf getFile];
 		}
     }];
     [self.view addSubview:self.BlueprintView];
+}
+
+- (void)getFile{
+	[[JZDocumentPickerViewTool sharePhotosAblumTool] getPickerViewToolWith:self block:^(id  _Nonnull object) {
+		NSURL *path = (NSURL *)object;
+		
+		NSData *data = [NSData dataWithContentsOfURL:path];
+		UIImage *imageName = [UIImage imageWithData:data];
+		NSURL *path1 = (NSURL *)object;
+	}];
 }
 - (void)viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:animated];

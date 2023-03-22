@@ -89,7 +89,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 	
 	CADMembersModel *model = self.dataArray[indexPath.section];
-	CADTeamMembersCell *cell = [CADTeamMembersCell createTableViewCellWith:tableView withModel:model];
+	CADPProjectListCell *cell = [CADPProjectListCell createTableViewCellWith:tableView withModel:model];
 	
 	return cell;
 }

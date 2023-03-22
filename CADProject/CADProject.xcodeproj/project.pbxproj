@@ -34,6 +34,8 @@
 		0C7C363829C9944800387137 /* CADMembersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C363729C9944800387137 /* CADMembersModel.m */; };
 		0C7C363B29C9AE8C00387137 /* CADProjectListVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C363A29C9AE8C00387137 /* CADProjectListVController.m */; };
 		0C7C363E29C9B25800387137 /* CADPProjectListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C363D29C9B25800387137 /* CADPProjectListView.m */; };
+		0C7C364229CAAEE900387137 /* JZDocumentPickerViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C364129CAAEE900387137 /* JZDocumentPickerViewTool.m */; };
+		0C7C364529CAFB1400387137 /* CADFileManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C364429CAFB1400387137 /* CADFileManagerTool.m */; };
 		0CD641F029B19B84001DE8C3 /* UIView+SYViewShowAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD641EF29B19B84001DE8C3 /* UIView+SYViewShowAlert.m */; };
 		0CEABFD729ACA88200E823A9 /* JZBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFD329ACA88200E823A9 /* JZBaseTableViewCell.m */; };
 		0CEABFD829ACA88200E823A9 /* JZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABFD429ACA88200E823A9 /* JZBaseViewController.m */; };
@@ -103,6 +105,11 @@
 		0C7C363A29C9AE8C00387137 /* CADProjectListVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADProjectListVController.m; sourceTree = "<group>"; };
 		0C7C363C29C9B25800387137 /* CADPProjectListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADPProjectListView.h; sourceTree = "<group>"; };
 		0C7C363D29C9B25800387137 /* CADPProjectListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADPProjectListView.m; sourceTree = "<group>"; };
+		0C7C364029CAAEE900387137 /* JZDocumentPickerViewTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZDocumentPickerViewTool.h; sourceTree = "<group>"; };
+		0C7C364129CAAEE900387137 /* JZDocumentPickerViewTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZDocumentPickerViewTool.m; sourceTree = "<group>"; };
+		0C7C364329CAFB1400387137 /* CADFileManagerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADFileManagerTool.h; sourceTree = "<group>"; };
+		0C7C364429CAFB1400387137 /* CADFileManagerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADFileManagerTool.m; sourceTree = "<group>"; };
+		0C7C364629CAFD1D00387137 /* CADProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CADProject.entitlements; sourceTree = "<group>"; };
 		0CD641EE29B19B84001DE8C3 /* UIView+SYViewShowAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SYViewShowAlert.h"; sourceTree = "<group>"; };
 		0CD641EF29B19B84001DE8C3 /* UIView+SYViewShowAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SYViewShowAlert.m"; sourceTree = "<group>"; };
 		0CEABFD129ACA88200E823A9 /* JZBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZBaseViewController.h; sourceTree = "<group>"; };
@@ -247,6 +254,7 @@
 		04BDD86829A7C40C003A09F8 /* CADProject */ = {
 			isa = PBXGroup;
 			children = (
+				0C7C364629CAFD1D00387137 /* CADProject.entitlements */,
 				0407F51029AD01EA00604D20 /* blueprint */,
 				0407F51129AD026C00604D20 /* project */,
 				0407F51229AD028100604D20 /* add */,
@@ -269,9 +277,21 @@
 			path = CADProject;
 			sourceTree = "<group>";
 		};
+		0C7C363F29CAAC7800387137 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				0C7C364029CAAEE900387137 /* JZDocumentPickerViewTool.h */,
+				0C7C364129CAAEE900387137 /* JZDocumentPickerViewTool.m */,
+				0C7C364329CAFB1400387137 /* CADFileManagerTool.h */,
+				0C7C364429CAFB1400387137 /* CADFileManagerTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		0CEABFCE29ACA88200E823A9 /* BottomPart */ = {
 			isa = PBXGroup;
 			children = (
+				0C7C363F29CAAC7800387137 /* Tool */,
 				0407F50C29AD013100604D20 /* TAB */,
 				0CEABFEA29ACA97100E823A9 /* Category */,
 				0CEABFCF29ACA88200E823A9 /* NAV */,
@@ -474,6 +494,7 @@
 				0CEABFE729ACA8D400E823A9 /* SYNavigationitemLeftView.m in Sources */,
 				04BDD87129A7C40C003A09F8 /* ViewController.m in Sources */,
 				0407F50F29AD019100604D20 /* JZTabbarViewController.m in Sources */,
+				0C7C364229CAAEE900387137 /* JZDocumentPickerViewTool.m in Sources */,
 				0C7C363829C9944800387137 /* CADMembersModel.m in Sources */,
 				0407F52629AE4F7F00604D20 /* CADBlueprintView.m in Sources */,
 				04BDD86B29A7C40C003A09F8 /* AppDelegate.m in Sources */,
@@ -482,6 +503,7 @@
 				0407F52329AD042400604D20 /* CADBlueprintViewController.m in Sources */,
 				0407F51D29AD03D800604D20 /* CADAddViewController.m in Sources */,
 				0CEABFE929ACA8D400E823A9 /* JZNavigationController.m in Sources */,
+				0C7C364529CAFB1400387137 /* CADFileManagerTool.m in Sources */,
 				0407F53229B356CB00604D20 /* CADProjectManagerVController.m in Sources */,
 				04BDD88829A7C6E1003A09F8 /* CADGuideViewController.m in Sources */,
 				0CEABFD929ACA88200E823A9 /* JZBaseTableViewController.m in Sources */,
@@ -651,11 +673,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = CADProject/CADProject.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = R55AZX43XK;
 				GCC_PREFIX_HEADER = CADProject/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CADProject/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -668,6 +695,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cad.CADProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = 2023_development_Any_JZ;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -679,11 +708,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = CADProject/CADProject.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = R55AZX43XK;
 				GCC_PREFIX_HEADER = CADProject/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CADProject/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -696,6 +730,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cad.CADProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = 2023_development_Any_JZ;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

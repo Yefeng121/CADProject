@@ -32,5 +32,7 @@
 #import "MJRefresh.h"
 #import <SDWebImage/UIImage+GIF.h>
 #import "UIButton+SYImagePosition.h"
+#import "JZDocumentPickerViewTool.h"
+#import "CADFileManagerTool.h"
 
 #endif /* PrefixHeader_pch */
